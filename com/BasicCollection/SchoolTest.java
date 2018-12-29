@@ -31,13 +31,11 @@ public class SchoolTest
 		hashSet.add(school);
 		hashSet.add(schoolOne);
 		hashSet.add(schoolTwo);
-		Iterator<Object> iterated = hashSet.iterator();
-		while (iterated.hasNext()) 
-		{
-			System.out.println(iterated.next());
-		}
+		String actual=hashSet.toString();
+		String expected="[School [city=Hyderbad,  district=RangaReddy, greatSchoolRanking=1], "
+				+"School [city=Delhi,  district=Noida, greatSchoolRanking=2]]";
+		assertEquals(expected,actual);
 	}
-
 	@Test
 	public void testingSchoolClassWithArrayList() 													//ArrayList doesnt remove any duplications
 	{
@@ -45,10 +43,10 @@ public class SchoolTest
 		arrayList.add(school);
 		arrayList.add(schoolOne);
 		arrayList.add(schoolTwo);
-		Iterator<Object> iterated = arrayList.iterator();
-		while (iterated.hasNext()) 
-		{
-			System.out.println(iterated.next());
-		}
+		String actual=arrayList.toString();
+		String expected="[School [city=Hyderbad,  district=RangaReddy, greatSchoolRanking=1], "
+				+"School [city=Hyderbad,  district=RangaReddy, greatSchoolRanking=15], "
+				+"School [city=Delhi,  district=Noida, greatSchoolRanking=2]]";
+		assertEquals(expected,actual);
 	}
 }

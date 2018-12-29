@@ -30,11 +30,11 @@ public class LaptopTest
 		hashSet.add(laptop);
 		hashSet.add(laptopOne);
 		hashSet.add(laptopTwo);
-		Iterator<Object> iterated = hashSet.iterator();
-		while (iterated.hasNext()) 
-		{
-			System.out.println(iterated.next());
-		}
+		String actual=hashSet.toString();
+		String expected="[Laptop [company=Delloite, model=5837, operatingsystem=windows 8, processor=i5 processor], "
+						+"Laptop [company=HP, model=2837, operatingsystem=windows 7, processor=i7 processor]]";
+		assertEquals(expected,actual);
+		
 	}
 
 	@Test
@@ -44,10 +44,10 @@ public class LaptopTest
 		arrayList.add(laptop);
 		arrayList.add(laptopOne);
 		arrayList.add(laptopTwo);
-		Iterator<Object> iterated = arrayList.iterator();
-		while (iterated.hasNext()) 
-		{
-			System.out.println(iterated.next());
-		}
+		String actual=arrayList.toString();
+		String expected="[Laptop [company=Delloite, model=5837, operatingsystem=windows 8, processor=i5 processor], "
+				+"Laptop [company=HP, model=2837, operatingsystem=windows 7, processor=i7 processor], "
+				+"Laptop [company=Delloite, model=5837, operatingsystem=windows 7, processor=i5 processor]]";
+		assertEquals(expected,actual);
 	}
 }
