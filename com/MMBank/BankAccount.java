@@ -50,8 +50,12 @@ public abstract class BankAccount
 
 	public  void deposit(float amountToDeposit)
 	{
-		
+		if(amountToDeposit>0)
+			accountBalance +=amountToDeposit;
+		else
+			throw new InsufficientFundException("Invalid Amount");
 	}
+	
 
 	@Override
 	

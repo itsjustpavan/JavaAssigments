@@ -31,11 +31,10 @@ public class CellphoneTest
 		hashSet.add(cellphone);
 		hashSet.add(cellphoneOne);
 		hashSet.add(cellphoneTwo);
-		Iterator<Object> iterated = hashSet.iterator();
-		while (iterated.hasNext()) 
-		{
-			System.out.println(iterated.next());
-		}
+		String actual=hashSet.toString();
+		String expected="[Cellphone [company=Iphone, model=8, description=Apple, operatingSystem=Mac, price=60000.0], "
+				 +"Cellphone [company=Nokia, model=57, description=Super Phone, operatingSystem=Nougat, price=50000.0]]";
+		assertEquals(expected,actual);
 	}
 
 	@Test
@@ -46,10 +45,10 @@ public class CellphoneTest
 		arrayList.add(cellphone);
 		arrayList.add(cellphoneOne);
 		arrayList.add(cellphoneTwo);
-		Iterator<Object> iterated = arrayList.iterator();
-		while (iterated.hasNext()) 
-		{
-			System.out.println(iterated.next());
-		}
+		String actual=arrayList.toString();
+		String expected="[Cellphone [company=Nokia, model=57, description=Super Phone, operatingSystem=Nougat, price=50000.0], "
+							+"Cellphone [company=Nokia, model=57, description=Super Phone, operatingSystem=Nougat, price=60000.0], "
+							+"Cellphone [company=Iphone, model=8, description=Apple, operatingSystem=Mac, price=60000.0]]";
+		assertEquals(expected,actual);
 	}
 }

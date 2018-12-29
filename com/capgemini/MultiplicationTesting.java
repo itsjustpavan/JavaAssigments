@@ -8,7 +8,7 @@ public class MultiplicationTesting                          //class Named Multip
  {
 
 	@Test
-	public void MultiplicationTestingOfNegative() 
+	public void multiplicationTestingOfNegative() 
 	{
 		Calculator calculator=new Calculator();
 		int result=calculator.multiplication(-1,-5);
@@ -16,7 +16,7 @@ public class MultiplicationTesting                          //class Named Multip
 	}
 	
 	@Test
-	public void MultiplicationTestingOfOneNegative() 
+	public void multiplicationTestingOfOneNegative() 
 	{
 		Calculator calculator=new Calculator();
 		int result=calculator.multiplication(-1,5);
@@ -24,7 +24,7 @@ public class MultiplicationTesting                          //class Named Multip
 	}
 	
 	@Test
-	public void MultiplicationTestingOfPositive() 
+	public void multiplicationTestingOfPositive() 
 	{
 		Calculator calculator=new Calculator();
 		int result=calculator.multiplication(1,5);
@@ -32,7 +32,7 @@ public class MultiplicationTesting                          //class Named Multip
 	}
 	
 	@Test
-	public void MultiplicationTestingOfZeroes() 
+	public void multiplicationTestingOfZeroes() 
 	{
 		Calculator calculator=new Calculator();
 		int result=calculator.multiplication(0,0);

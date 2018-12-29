@@ -8,7 +8,7 @@ public class AdditionTesting                          //Class Named AdditionTest
  {
 
 	@Test
-	public void AdditionTestingOfNegative() 
+	public void additionTestingOfNegative() 
 	{
 		Calculator calculator=new Calculator();
 		int result=calculator.addition(-1,-5);
@@ -16,7 +16,7 @@ public class AdditionTesting                          //Class Named AdditionTest
 	}
 	
 	@Test
-	public void AdditionTestingOfOneNegative() 
+	public void additionTestingOfOneNegative() 
 	{
 		Calculator calculator=new Calculator();
 		int result=calculator.addition(-1,5);
@@ -24,7 +24,7 @@ public class AdditionTesting                          //Class Named AdditionTest
 	}
 	
 	@Test
-	public void AdditionTestingOfPositive() 
+	public void additionTestingOfPositive() 
 	{
 		Calculator calculator=new Calculator();
 		int result=calculator.addition(1,5);
@@ -32,7 +32,7 @@ public class AdditionTesting                          //Class Named AdditionTest
 	}
 	
 	@Test
-	public void AdditionTestingOfZeroes() 
+	public void additionTestingOfZeroes() 
 	{
 		Calculator calculator=new Calculator();
 		int result=calculator.addition(0,0);

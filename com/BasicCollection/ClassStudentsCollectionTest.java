@@ -1,9 +1,6 @@
 package com.BasicCollection;
 
 import static org.junit.Assert.*;
-
-import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.TreeSet;
@@ -11,7 +8,7 @@ import java.util.TreeSet;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.capgemini.Laptop;
+
 
 public class ClassStudentsCollectionTest 
 {

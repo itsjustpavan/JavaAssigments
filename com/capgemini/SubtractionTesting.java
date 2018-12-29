@@ -7,7 +7,7 @@ import org.junit.Test;
 public class SubtractionTesting                       //class named SubtractionTesting
  {
 	@Test      
-	public void SubtractionTestingOfNegative() 
+	public void subtractionTestingOfNegative() 
 	{
 		Calculator calculator=new Calculator();
 		int result=calculator.subtraction(-1,-5);
@@ -15,7 +15,7 @@ public class SubtractionTesting                       //class named SubtractionT
 	}
 	
 	@Test
-	public void SubtractionTestingOfOneNegative() 
+	public void subtractionTestingOfOneNegative() 
 	{
 		Calculator calculator=new Calculator();
 		int result=calculator.subtraction(-1,5);
@@ -23,7 +23,7 @@ public class SubtractionTesting                       //class named SubtractionT
 	}
 	
 	@Test
-	public void SubtractionTestingOfPositive() 
+	public void subtractionTestingOfPositive() 
 	{
 		Calculator calculator=new Calculator();
 		int result=calculator.subtraction(1,5);
@@ -31,7 +31,7 @@ public class SubtractionTesting                       //class named SubtractionT
 	}
 	
 	@Test
-	public void SubtractionTestingOfZeroes() 
+	public void subtractionTestingOfZeroes() 
 	{
 		Calculator calculator=new Calculator();
 		int result=calculator.subtraction(0,0);
