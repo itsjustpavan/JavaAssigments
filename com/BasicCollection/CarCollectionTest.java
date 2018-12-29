@@ -34,11 +34,11 @@ public class CarCollectionTest {
 		hashSet.add(carOne);
 		hashSet.add(carTwo);
 		hashSet.add(carThree);
-		Iterator<Object> iterated = hashSet.iterator();
-		while (iterated.hasNext()) 
-		{
-			System.out.println(iterated.next());
-		}
+		String actual=hashSet.toString();
+		String expected="[Car [make=Maruti, model=573, year=2017, price=583.0], "
+						+"Car [make=Audi, model=58, year=1999, price=584.0], "
+						+"Car [make=Hyundai, model=102, year=1996, price=102.0]]";
+		assertEquals(expected,actual);
 	}
 
 	@Test
@@ -49,11 +49,12 @@ public class CarCollectionTest {
 		arrayList.add(carOne);
 		arrayList.add(carTwo);
 		arrayList.add(carThree);
-		Iterator<Object> iterated = arrayList.iterator();
-		while (iterated.hasNext()) 
-		{
-			System.out.println(iterated.next());
-		}
-	}
+		String actual=arrayList.toString();
+		String expected="[Car [make=Hyundai, model=102, year=1996, price=102.0], "
+						+"Car [make=Hyundai, model=102, year=2019, price=103.0], "
+						+"Car [make=Maruti, model=573, year=2017, price=583.0], "
+						+"Car [make=Audi, model=58, year=1999, price=584.0]]";
+		assertEquals(expected,actual);
+		
 }
-
+}

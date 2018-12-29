@@ -33,7 +33,7 @@ public class CellphoneTest
 		hashSet.add(cellphoneTwo);
 		String actual=hashSet.toString();
 		String expected="[Cellphone [company=Iphone, model=8, description=Apple, operatingSystem=Mac, price=60000.0], "
-				 +"Cellphone [company=Nokia, model=57, description=Super Phone, operatingSystem=Nougat, price=50000.0]]";
+				 		+"Cellphone [company=Nokia, model=57, description=Super Phone, operatingSystem=Nougat, price=50000.0]]";
 		assertEquals(expected,actual);
 	}
 
@@ -47,8 +47,8 @@ public class CellphoneTest
 		arrayList.add(cellphoneTwo);
 		String actual=arrayList.toString();
 		String expected="[Cellphone [company=Nokia, model=57, description=Super Phone, operatingSystem=Nougat, price=50000.0], "
-							+"Cellphone [company=Nokia, model=57, description=Super Phone, operatingSystem=Nougat, price=60000.0], "
-							+"Cellphone [company=Iphone, model=8, description=Apple, operatingSystem=Mac, price=60000.0]]";
+						+"Cellphone [company=Nokia, model=57, description=Super Phone, operatingSystem=Nougat, price=60000.0], "
+						+"Cellphone [company=Iphone, model=8, description=Apple, operatingSystem=Mac, price=60000.0]]";
 		assertEquals(expected,actual);
 	}
 }

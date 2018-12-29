@@ -1,6 +1,7 @@
 package com.BasicCollection;
 
 import static org.junit.Assert.*;
+
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.TreeSet;
@@ -40,13 +41,17 @@ public class ClassStudentsCollectionTest
 		treeSet.add(classStudentsTwo.toString());
 		treeSet.add(classStudentsThree.toString());
 		treeSet.add(classStudentsFour.toString());
-		
-		Iterator<Object> iterated = treeSet.iterator();
-		while (iterated.hasNext()) 
-		{
-			System.out.println(iterated.next());
-		}
+		String actual=treeSet.toString();
+		String expected="[ClassStudentsCollection [firstname=Aakash, lastname=adikam, id=586], "
+				+"ClassStudentsCollection [firstname=Venkat, lastname=javvaji, id=585], "
+				+"ClassStudentsCollection [firstname=akash, lastname=padikam, id=586], "
+				+"ClassStudentsCollection [firstname=nihkil, lastname=gandhleru, id=584], "
+				+"ClassStudentsCollection [firstname=pavan, lastname=kaleru, id=583]]";
+		assertEquals(expected,actual);
 	}
+		
+		
+
 	
 	@Test
 	
@@ -58,12 +63,15 @@ public class ClassStudentsCollectionTest
 		linkedList.add(classStudentsTwo.toString());
 		linkedList.add(classStudentsThree.toString());
 		linkedList.add(classStudentsFour.toString());
+		String actual=linkedList.toString();
+		String expected="[ClassStudentsCollection [firstname=pavan, lastname=kaleru, id=583], "
+				+"ClassStudentsCollection [firstname=nihkil, lastname=gandhleru, id=584], "
+				+"ClassStudentsCollection [firstname=Venkat, lastname=javvaji, id=585], "
+				+"ClassStudentsCollection [firstname=Aakash, lastname=adikam, id=586], "
+				+"ClassStudentsCollection [firstname=akash, lastname=padikam, id=586]]";
+		assertEquals(expected,actual);
 		
-		Iterator<Object> iterated = linkedList.iterator();
-		while (iterated.hasNext()) 
-		{
-			System.out.println(iterated.next());
-		}
+		
 	}
 }	
 	
