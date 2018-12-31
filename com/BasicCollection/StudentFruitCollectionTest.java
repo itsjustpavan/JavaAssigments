@@ -36,10 +36,6 @@ public class StudentFruitCollectionTest
 		{    
 		       System.out.println(m.getKey()+" "+m.getValue());    
 		}  
-		for(Map.Entry m:hashMap.entrySet())
-		{    
-		       System.out.println(m.getKey());    
-		}  
 			
 	}
 	

@@ -31,12 +31,12 @@ public class TelvisionCollectionTest
 		hashSet.add(telivision);
 		hashSet.add(telivisionOne);
 		hashSet.add(telivisionTwo);
-		Iterator<Object> iterated = hashSet.iterator();
-		while (iterated.hasNext()) 
-		{
-			System.out.println(iterated.next());
-		}
+		String expected="[TelivisionCollection [company=Sony, type=LED, threeDimensionE0nabled=true, price=30000.0], "
+						+"TelivisionCollection [company=Philips, type=LCD, threeDimensionE0nabled=false, price=40000.0]]";
+		String result=hashSet.toString();
+		assertEquals(expected,result);
 	}
+				
 
 	@Test
 	public void testingTelivisionClassWithArrayList() 													//ArrayList doesnt remove any duplications
@@ -45,10 +45,12 @@ public class TelvisionCollectionTest
 		arrayList.add(telivision);
 		arrayList.add(telivisionOne);
 		arrayList.add(telivisionTwo);
-		Iterator<Object> iterated = arrayList.iterator();
-		while (iterated.hasNext()) 
-		{
-			System.out.println(iterated.next());
-		}
+		String expected="[TelivisionCollection [company=Sony, type=LED, threeDimensionE0nabled=true, price=30000.0], "
+				+"TelivisionCollection [company=Philips, type=LCD, threeDimensionE0nabled=false, price=40000.0], "
+				+"TelivisionCollection [company=Sony, type=LED, threeDimensionE0nabled=false, price=30000.0]]";
+
+		String result=arrayList.toString();
+		assertEquals(expected,result);
 	}
 }
+		
